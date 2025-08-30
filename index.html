@@ -1112,33 +1112,6 @@
             feedbackSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
-        function submitFeedback(event) {
-            event.preventDefault();
-
-            const name = document.getElementById('feedbackName').value || 'Someone special';
-            const message = document.getElementById('feedbackMessage').value;
-            const wishType = document.getElementById('wishType').value;
-
-            // Simulate form submission (in a real app, you'd send this to a server)
-            setTimeout(() => {
-                document.getElementById('feedbackSuccess').style.display = 'block';
-                document.querySelector('.feedback-form').style.display = 'none';
-
-                // Create celebration effects
-                for (let i = 0; i < 15; i++) {
-                    setTimeout(createHeart, i * 100);
-                    setTimeout(createSparkle, i * 150);
-                }
-
-                // Reset form after showing success
-                setTimeout(() => {
-                    document.querySelector('.feedback-form').reset();
-                    document.querySelector('.feedback-form').style.display = 'block';
-                    document.getElementById('feedbackSuccess').style.display = 'none';
-                }, 4000);
-
-            }, 1000);
-        }
     </script>
 </body>
 
