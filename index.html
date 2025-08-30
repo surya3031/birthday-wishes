@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,9 +23,17 @@
         }
 
         @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .container {
@@ -60,7 +69,7 @@
             }
         }
 
-        .main-title {
+        /* .main-title {
             font-size: 3.5rem;
             background: linear-gradient(45deg, #48ADEB, #9353E6);
             -webkit-background-clip: text;
@@ -70,11 +79,16 @@
             font-weight: bold;
             text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             animation: titlePulse 2s ease-in-out infinite alternate;
-        }
+        } */
 
         @keyframes titlePulse {
-            from { transform: scale(1); }
-            to { transform: scale(1.05); }
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.05);
+            }
         }
 
         .love-message {
@@ -138,6 +152,7 @@
                 transform: translateY(100vh) rotate(0deg);
                 opacity: 1;
             }
+
             100% {
                 transform: translateY(-100px) rotate(360deg);
                 opacity: 0;
@@ -151,7 +166,7 @@
             margin: 20px 0;
             border: 2px solid #ff6b9d;
             display: none;
-            animation: messageSlide 0.8s ease forwards;
+            animation: messageSlide 10s ease forwards;
         }
 
         @keyframes messageSlide {
@@ -159,6 +174,7 @@
                 transform: translateX(-50px);
                 opacity: 0;
             }
+
             to {
                 transform: translateX(0);
                 opacity: 1;
@@ -172,12 +188,19 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateY(0);
             }
+
             40% {
                 transform: translateY(-20px);
             }
+
             60% {
                 transform: translateY(-10px);
             }
@@ -201,20 +224,29 @@
         }
 
         @keyframes sparkleShine {
-            0%, 100% { opacity: 0; transform: scale(0); }
-            50% { opacity: 1; transform: scale(1); }
+
+            0%,
+            100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         @media (max-width: 768px) {
             .main-title {
                 font-size: 2.5rem;
             }
-            
+
             .birthday-card {
                 padding: 40px 25px;
                 margin: 20px;
             }
-            
+
             .love-message {
                 font-size: 1.1rem;
             }
@@ -228,7 +260,7 @@
             margin: 30px 0;
             border: 2px solid #48ADEB;
             display: none;
-            animation: slideIn 0.8s ease forwards;
+            animation: slideIn 10s ease forwards;
         }
 
         .memories-section h3 {
@@ -432,6 +464,7 @@
                 transform: translateY(30px);
                 opacity: 0;
             }
+
             to {
                 transform: translateY(0);
                 opacity: 1;
@@ -439,8 +472,13 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         @keyframes successPop {
@@ -448,6 +486,7 @@
                 transform: scale(0.8);
                 opacity: 0;
             }
+
             100% {
                 transform: scale(1);
                 opacity: 1;
@@ -554,88 +593,88 @@
             .main-title {
                 font-size: 2.2rem;
             }
-            
+
             .birthday-card {
                 padding: 30px 20px;
                 margin: 10px;
             }
-            
+
             .love-message {
                 font-size: 1rem;
             }
-            
+
             .personal-message {
                 padding: 20px;
                 font-size: 1rem;
             }
-            
+
             .interactive-button {
                 padding: 12px 25px;
                 font-size: 1rem;
                 margin: 8px 5px;
             }
-            
+
             .memories-section,
             .feedback-section,
             .flip-cards-section {
                 padding: 20px;
                 margin: 20px 0;
             }
-            
+
             .memories-section h3,
             .feedback-section h3,
             .flip-cards-section h3 {
                 font-size: 1.5rem;
             }
-            
+
             .flip-cards-container {
                 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
                 gap: 15px;
             }
-            
+
             .flip-card {
                 height: 160px;
             }
-            
+
             .card-emoji {
                 font-size: 2.5rem;
                 margin-bottom: 10px;
             }
-            
+
             .flip-card-front h4 {
                 font-size: 1.2rem;
             }
-            
+
             .flip-card-back p {
                 font-size: 0.9rem;
                 padding: 10px;
             }
-            
+
             .memory-slide {
                 padding: 25px 20px;
                 min-height: 200px;
             }
-            
+
             .memory-emoji {
                 font-size: 2.5rem;
             }
-            
+
             .memory-slide h4 {
                 font-size: 1.3rem;
             }
-            
+
             .memory-slide p {
                 font-size: 1rem;
             }
-            
+
             .feedback-form {
                 padding: 0;
             }
-            
+
             .form-group {
                 margin-bottom: 15px;
             }
-            
+
             .form-group input,
             .form-group textarea,
             .form-group select {
@@ -644,101 +683,106 @@
             }
         }
 
-        @media (max-width: 480px) {
-            .main-title {
-                font-size: 1.8rem;
-            }
-            
-            .birthday-card {
-                padding: 25px 15px;
-            }
-            
-            .container {
-                padding: 10px;
-            }
-            
-            .flip-cards-container {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-            }
-            
-            .flip-card {
-                height: 140px;
-            }
-            
-            .interactive-button {
-                padding: 10px 20px;
-                font-size: 0.9rem;
-                margin: 5px 3px;
-            }
+
+
+        .birthday-card {
+            padding: 25px 15px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .flip-cards-container {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .flip-card {
+            height: 140px;
+        }
+
+        .interactive-button {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            margin: 5px 3px;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.2em;
+            color: #ff4b6e;
+            margin-bottom: 10px;
+            line-height: 1.2;
         }
     </style>
 </head>
+
 <body>
     <div class="hearts-container" id="heartsContainer"></div>
     <div class="sparkles" id="sparklesContainer"></div>
-    
+
     <div class="container">
         <div class="birthday-card">
-            <h1 class="main-title">Happy Birthday!
-                <br>
-                Shruu💜
-            </h1>
+            <h1 class="main-title">Happy Birthday Shru💜💙</h1>
             <div class="cake-emoji">🎂</div>
-            
+
             <div class="love-message">
                 To the most amazing person in my life...
             </div>
-            
+
             <div class="personal-message">
                 <p><strong>My Dearest Love,</strong></p>
-                <p>On this special day, I want you to know that you are the light of my life, the beat of my heart, and the love of my soul. Every moment with you is a gift, and I'm grateful for every smile, every laugh, and every memory we've shared together.</p>
-                <p>May this new year of your life be filled with endless joy, beautiful surprises, and all the love your heart can hold. You deserve the world and more!</p>
-                <p><strong>With all my love, always and forever ❤️</strong></p>
+                <p>You are the light of my life and the beat of my heart. Every moment with you is a precious gift.</p>
+                <p>May this year bring you endless joy, love, and beautiful surprises—you deserve it all!</p>
+                <p><strong>With all my love, forever ❤️</strong></p>
+
             </div>
-            
+
             <button class="interactive-button" onclick="showSurprise()">🎉 Click for a Surprise!</button>
-            <button class="interactive-button" onclick="openSpotify()">🎵 Play Birthday Playlist</button>
-            <button class="interactive-button" onclick="showMemories()">💝 Our Beautiful Memories</button>
+            <button class="interactive-button" onclick="showMemories()">💝 Whats on my mind</button>
+            <button class="interactive-button" onclick="showFlipCards()">💌 Priceless Feelings</button>
             <button class="interactive-button" onclick="showFeedback()">💌 Leave a Sweet Message</button>
-            <button class="interactive-button" onclick="showFlipCards()">💎 Special Moments</button>
-            
+            <button class="interactive-button" onclick="openSpotify()">🎵 Play Birthday Playlist</button>
+
             <div class="birthday-message" id="surpriseMessage">
                 <h3>🌟 Special Birthday Wishes 🌟</h3>
-                <p>You make every day brighter just by being you. Here's to another year of wonderful adventures together! I love you more than words can express. 💕</p>
+                <p>You make every day brighter just by being you. Here's to another year of wonderful adventures
+                    together! I love you more than words can express. 💕</p>
             </div>
-            
+
             <!-- Memory Slider -->
             <div class="memories-section" id="memoriesSection">
-                <h3>💖 Our Beautiful Journey Together 💖</h3>
+                <h3>💖 Whats on my mind 💖</h3>
                 <div class="slider-container">
                     <div class="slider-wrapper">
                         <div class="memory-slide active">
                             <div class="memory-content">
                                 <div class="memory-emoji">🌟</div>
-                                <h4>Our First Date</h4>
-                                <p>The moment I knew you were special. Your smile lit up the entire room and my heart has never been the same since.</p>
+                                <h4>Always be happy</h4>
+                                <p>Nee Eppavum Happy ah irukanum</p>
                             </div>
                         </div>
                         <div class="memory-slide">
                             <div class="memory-content">
                                 <div class="memory-emoji">💕</div>
-                                <h4>First "I Love You"</h4>
-                                <p>Those three words changed everything. The way your eyes sparkled when you said them back - pure magic.</p>
+                                <h4>Achieve in your study</h4>
+                                <p>Study well and achieve your goal</p>
                             </div>
                         </div>
                         <div class="memory-slide">
                             <div class="memory-content">
                                 <div class="memory-emoji">🌅</div>
-                                <h4>Our Adventure Together</h4>
-                                <p>Every trip, every sunset, every shared laugh. Building memories that will last a lifetime, one moment at a time.</p>
+                                <h4>I am not a barrier for you</h4>
+                                <p>Nan eppavum unnoda thadai ah iruka maaten.</p>
                             </div>
                         </div>
                         <div class="memory-slide">
                             <div class="memory-content">
                                 <div class="memory-emoji">🎉</div>
-                                <h4>Celebrating You Today</h4>
-                                <p>Another year older, another year more beautiful. Here's to creating countless more amazing memories together!</p>
+                                <h4>You are my first and last</h4>
+                                <p>Nee enaku venum nadakathu thaan nadantha nalla irukum.Nee thaan ennoda first and last
+                                    forever.163💜</p>
                             </div>
                         </div>
                     </div>
@@ -754,39 +798,38 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Feedback Form -->
             <div class="feedback-section" id="feedbackSection">
-                <h3>💌 Leave Your Thoughts & Wishes</h3>
+                <h3>💌 Enkitta Ethavuthu Sollanumna Sollu Plss</h3>
                 <form class="feedback-form" onsubmit="submitFeedback(event)">
                     <div class="form-group">
                         <label for="feedbackName">Your Name (optional):</label>
-                        <input type="text" id="feedbackName" name="name" placeholder="Who is sending love?">
+                        <input type="text" id="feedbackName" name="from_name" placeholder="Who is sending love?">
+                    </div>
+                    <div class="form-group">
+                        <label for="feedbackMobile">Your Mobile Number:</label>
+                        <input type="tel" id="feedbackMobile" name="from_mobile" placeholder="Enter your mobile number">
                     </div>
                     <div class="form-group">
                         <label for="feedbackMessage">Your Sweet Message:</label>
-                        <textarea id="feedbackMessage" name="message" placeholder="Share your birthday wishes, memories, or just say something sweet..." rows="4" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="wishType">Type of wish:</label>
-                        <select id="wishType" name="wishType">
-                            <option value="birthday">Birthday Wish</option>
-                            <option value="memory">Favorite Memory</option>
-                            <option value="love">Love Note</option>
-                            <option value="future">Future Dreams</option>
-                        </select>
+                        <textarea id="feedbackMessage" name="message" placeholder="Anything want to say" rows="4"
+                            required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Love 💕</button>
                 </form>
+
+
+
                 <div class="feedback-success" id="feedbackSuccess">
                     <h4>💖 Message Sent Successfully!</h4>
-                    <p>Your beautiful words have been saved in her heart forever!</p>
+                    <p>Your beautiful words have been saved in his heart forever!</p>
                 </div>
             </div>
-            
+
             <!-- Flip Cards Section -->
             <div class="flip-cards-section" id="flipCardsSection">
-                <h3>💎 Our Special Moments 💎</h3>
+                <h3>💎Priceless Feelings💎</h3>
                 <div class="flip-cards-container">
                     <div class="flip-card">
                         <div class="flip-card-inner">
@@ -795,11 +838,12 @@
                                 <h4>Love</h4>
                             </div>
                             <div class="flip-card-back">
-                                <p>You are my heart, my soul, my everything. Every beat of my heart whispers your name.</p>
+                                <p>You are my heart, my soul, my everything. Every beat of my heart whispers your name.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -811,7 +855,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -819,11 +863,12 @@
                                 <h4>Future</h4>
                             </div>
                             <div class="flip-card-back">
-                                <p>I can't wait to celebrate many more birthdays with you and create endless beautiful memories!</p>
+                                <p>I can't wait to celebrate many more birthdays with you and create endless beautiful
+                                    memories!</p>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -835,7 +880,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -847,7 +892,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="flip-card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -855,7 +900,8 @@
                                 <h4>Wishes</h4>
                             </div>
                             <div class="flip-card-back">
-                                <p>May all your birthday wishes come true, and may happiness follow you everywhere you go!</p>
+                                <p>May all your birthday wishes come true, and may happiness follow you everywhere you
+                                    go!</p>
                             </div>
                         </div>
                     </div>
@@ -863,6 +909,39 @@
             </div>
         </div>
     </div>
+
+    <!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("6uxNI-qnnZQv1szns"); // your Public Key
+    })();
+
+    function submitFeedback(event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_ihpd5vs", "template_n04e4b7", event.target)
+            .then(function() {
+                document.querySelector('.feedback-form').style.display = 'none';
+                document.getElementById('feedbackSuccess').style.display = 'block';
+
+                // Celebration effects
+                for (let i = 0; i < 15; i++) {
+                    setTimeout(createHeart, i * 100);
+                    setTimeout(createSparkle, i * 150);
+                }
+
+                setTimeout(() => {
+                    document.querySelector('.feedback-form').reset();
+                    document.querySelector('.feedback-form').style.display = 'block';
+                    document.getElementById('feedbackSuccess').style.display = 'none';
+                }, 4000);
+
+            }, function(error) {
+                alert("❌ Oops! Something went wrong: " + JSON.stringify(error));
+            });
+    }
+</script>
 
     <script>
         // Create floating hearts
@@ -874,12 +953,12 @@
             heart.style.animationDelay = Math.random() * 2 + 's';
             heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
             document.getElementById('heartsContainer').appendChild(heart);
-            
+
             setTimeout(() => {
                 heart.remove();
             }, 7000);
         }
-        
+
         // Create sparkles
         function createSparkle() {
             const sparkle = document.createElement('div');
@@ -889,55 +968,56 @@
             sparkle.style.top = Math.random() * 100 + '%';
             sparkle.style.animationDelay = Math.random() * 3 + 's';
             document.getElementById('sparklesContainer').appendChild(sparkle);
-            
+
             setTimeout(() => {
                 sparkle.remove();
             }, 3000);
         }
-        
+
         // Generate hearts and sparkles continuously
         setInterval(createHeart, 1000);
         setInterval(createSparkle, 2000);
-        
+
         // Surprise message function
         function showSurprise() {
             const message = document.getElementById('surpriseMessage');
             message.style.display = 'block';
-            
+
             // Create extra hearts
-            for(let i = 0; i < 10; i++) {
+            for (let i = 0; i < 10; i++) {
                 setTimeout(createHeart, i * 100);
             }
-            
+
             // Create extra sparkles
-            for(let i = 0; i < 5; i++) {
+            for (let i = 0; i < 5; i++) {
                 setTimeout(createSparkle, i * 200);
             }
         }
-        
+
         // Simple birthday song (using Web Audio API) - Replaced with Spotify
         function openSpotify() {
             // You can replace this URL with your specific birthday playlist
             const spotifyUrl = 'https://open.spotify.com/playlist/37i9dQZF1DX0XUsuxWHRQd'; // Happy Birthday playlist
             window.open(spotifyUrl, '_blank');
-            
+
             // Create celebration effects
-            for(let i = 0; i < 10; i++) {
+            for (let i = 0; i < 10; i++) {
                 setTimeout(createHeart, i * 100);
                 setTimeout(createSparkle, i * 150);
             }
         }
-        
+
         // Flip cards functionality
         function showFlipCards() {
+            hideAllSections();
             const flipCardsSection = document.getElementById('flipCardsSection');
             flipCardsSection.style.display = 'block';
             flipCardsSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
-        
+
         // Initialize some hearts and sparkles on load
-        window.addEventListener('load', function() {
-            for(let i = 0; i < 5; i++) {
+        window.addEventListener('load', function () {
+            for (let i = 0; i < 5; i++) {
                 setTimeout(createHeart, i * 500);
                 setTimeout(createSparkle, i * 700);
             }
@@ -947,24 +1027,63 @@
         let currentMemoryIndex = 0;
         const totalMemories = 4;
 
+        function hideAllSections() {
+            document.getElementById('memoriesSection').style.display = 'none';
+            document.getElementById('feedbackSection').style.display = 'none';
+            document.getElementById('flipCardsSection').style.display = 'none';
+            document.getElementById('surpriseMessage').style.display = 'none';
+        }
+
         function showMemories() {
+            hideAllSections();
             const memoriesSection = document.getElementById('memoriesSection');
             memoriesSection.style.display = 'block';
             memoriesSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
+        function showSurprise() {
+            hideAllSections();
+            const message = document.getElementById('surpriseMessage');
+            message.style.display = 'block';
+            message.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            // Create extra hearts
+            for (let i = 0; i < 10; i++) {
+                setTimeout(createHeart, i * 100);
+            }
+
+            // Create extra sparkles
+            for (let i = 0; i < 5; i++) {
+                setTimeout(createSparkle, i * 200);
+            }
+        }
+
+        function showFlipCards() {
+            hideAllSections();
+            const flipCardsSection = document.getElementById('flipCardsSection');
+            flipCardsSection.style.display = 'block';
+            flipCardsSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function showFeedback() {
+            hideAllSections();
+            const feedbackSection = document.getElementById('feedbackSection');
+            feedbackSection.style.display = 'block';
+            feedbackSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
         function showMemory(index) {
             const slides = document.querySelectorAll('.memory-slide');
             const dots = document.querySelectorAll('.dot');
-            
+
             // Hide all slides
             slides.forEach(slide => slide.classList.remove('active'));
             dots.forEach(dot => dot.classList.remove('active'));
-            
+
             // Show selected slide
             slides[index].classList.add('active');
             dots[index].classList.add('active');
-            
+
             currentMemoryIndex = index;
         }
 
@@ -987,6 +1106,7 @@
 
         // Feedback form functionality
         function showFeedback() {
+            hideAllSections();
             const feedbackSection = document.getElementById('feedbackSection');
             feedbackSection.style.display = 'block';
             feedbackSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -994,31 +1114,32 @@
 
         function submitFeedback(event) {
             event.preventDefault();
-            
+
             const name = document.getElementById('feedbackName').value || 'Someone special';
             const message = document.getElementById('feedbackMessage').value;
             const wishType = document.getElementById('wishType').value;
-            
+
             // Simulate form submission (in a real app, you'd send this to a server)
             setTimeout(() => {
                 document.getElementById('feedbackSuccess').style.display = 'block';
                 document.querySelector('.feedback-form').style.display = 'none';
-                
+
                 // Create celebration effects
-                for(let i = 0; i < 15; i++) {
+                for (let i = 0; i < 15; i++) {
                     setTimeout(createHeart, i * 100);
                     setTimeout(createSparkle, i * 150);
                 }
-                
+
                 // Reset form after showing success
                 setTimeout(() => {
                     document.querySelector('.feedback-form').reset();
                     document.querySelector('.feedback-form').style.display = 'block';
                     document.getElementById('feedbackSuccess').style.display = 'none';
                 }, 4000);
-                
+
             }, 1000);
         }
     </script>
 </body>
+
 </html>
